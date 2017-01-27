@@ -1,5 +1,6 @@
-<h1>
-  {{title}}
-</h1>
-<p>App star wars</p>
-<pre>{{ people | json}}</pre>
+<div class="container">
+  <div class="row center">
+    <person *ngFor= "let _person of people" [person] = "_person"></person>
+  </div>
+</div>
+
